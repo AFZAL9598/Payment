@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>💰 Payment Tracker</h1>
+
+<div class="form">
+    <input type="text" id="name" placeholder="Customer Name">
+    <input type="number" id="amount" placeholder="Amount">
+    <input type="date" id="date">
+    <select id="status">
+        <option value="Paid">Paid</option>
+        <option value="Pending">Pending</option>
+    </select>
+    <button onclick="addPayment()">Add Payment</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="paymentList"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
